@@ -1,0 +1,23 @@
+{
+  "name": "woowup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest tests/",
+    "test-watch": "jest --watch tests/",
+    "prettier": "prettier --write src/*.js tests/*.js",
+    "eslint": "eslint src/*.js tests/*.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.20.1",
+    "eslint": "^7.23.0",
+    "eslint-plugin-jest": "^24.3.2",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
+  }
+}

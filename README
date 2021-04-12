@@ -1,0 +1,16 @@
+Uso:
+
+npm install
+npm test
+
+-----
+
+El ejercicio tiene una parte que está claramente definida, que es el manejo de la estructura de datos,
+en el archivo "src/woowup.js" se implementa esta parte, y en el archivo "test/woowup.test.js" están los test.
+
+Hay otra parte cuya definición es imprecisa, que es la estimación de la probable fecha de compra a partir de las fechas anteriores,
+hay muchas formas de estimar esta fecha, sin que ninguna sea claramente superior a las demás,
+para este caso he usado una estimación mensual, calculando el promedio de los meses pasados entre cada compra,
+esto está implementado en el archivo "src/nextPurchaseMonthly.js" y los test en en archivo "test/nextPurchaseMonthly.test.js.
+Seguramente este no sea el algoritmo ideal pero sirve para presentarle al cliente/usuario y conseguir feedback para implementar una solución que se adecue mejor a lo que busca.
+
