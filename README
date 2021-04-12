@@ -5,6 +5,11 @@ npm test
 
 -----
 
+
+Ejercicios:
+
+Reaprovisionamiento de productos:
+
 El ejercicio tiene una parte que está claramente definida, que es el manejo de la estructura de datos,
 en el archivo "src/woowup.js" se implementa esta parte, y en el archivo "test/woowup.test.js" están los test.
 
@@ -13,4 +18,22 @@ hay muchas formas de estimar esta fecha, sin que ninguna sea claramente superior
 para este caso he usado una estimación mensual, calculando el promedio de los meses pasados entre cada compra,
 esto está implementado en el archivo "src/nextPurchaseMonthly.js" y los test en en archivo "test/nextPurchaseMonthly.test.js.
 Seguramente este no sea el algoritmo ideal pero sirve para presentarle al cliente/usuario y conseguir feedback para implementar una solución que se adecue mejor a lo que busca.
+
+
+
+
+Subir la escalera
+
+La solución más directa para este ejercicio es recursiva, pero tiene una complejidad en tiempo muy alta,
+propongo dos soluciones, una de ellas requiere almacenamiento pero si se llama seguido a esta función la
+complejidad se vuelve sublineal y se trata de la implementación obvia con memorizacion,
+en el archivo "src/stair1.js" se implementa esta solución, y los test están en "test/stair1.test.js".
+
+
+La segunda opción no tiene costo de memoria, no está limitada por la capacidad del stack, y la complejidad en tiempo es lineal en n,
+esta solución está en el archivo "src/stair2.js" y los test en "test/stair2.test.js".
+
+En ninguna de estas soluciones se toman en cuenta los posibles overflows,
+pero en caso de que los valores que se usen superen el valor máximo que puede tomar un entero se resuelve facilmente usando BigInt.
+
 
